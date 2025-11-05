@@ -1,0 +1,19 @@
+[default]
+description = "Default permissions for the plugin"
+permissions = [
+  "allow-minimize",
+  "allow-toggle-maximize",
+  "allow-close",
+  "allow-drag",
+  "allow-move-by",
+  "allow-get-drag-behavior",
+  "allow-is-maximized",
+  "allow-get-window-controls",
+  "allow-get-window-control-image",
+  "allow-get-title-bar-css",
+  "allow-double-click-title-bar",
+  "allow-right-click-title-bar",
+  "allow-middle-click-title-bar",
+  "allow-show-snap-overlay",
+  "allow-hide-snap-overlay",
+]

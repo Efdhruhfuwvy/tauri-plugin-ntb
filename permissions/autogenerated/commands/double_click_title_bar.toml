@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-double-click-title-bar"
+description = "Enables the double_click_title_bar command without any pre-configured scope."
+commands.allow = ["double_click_title_bar"]
+
+[[permission]]
+identifier = "deny-double-click-title-bar"
+description = "Denies the double_click_title_bar command without any pre-configured scope."
+commands.deny = ["double_click_title_bar"]
