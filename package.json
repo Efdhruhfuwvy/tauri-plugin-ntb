@@ -1,6 +1,6 @@
 {
   "name": "tauri-plugin-ntb-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Efdhruhfuwvy",
   "description": "",
   "type": "module",
@@ -28,10 +28,11 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.0.0",
     "@tauri-apps/api": "^2.9.0",
-    "rollup": "^4.9.6",
-    "svelte": "^5.43.3",
+    "rollup": "^4.53.1",
+    "svelte": "^5.43.5",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["tauri", "native", "title-bar"]
 }

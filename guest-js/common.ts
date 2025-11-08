@@ -85,8 +85,8 @@ export async function titleBarMouseDown(event: MouseEvent) {
       async function mouseMove(event1: MouseEvent) {
         if (
           Math.max(
-            event1.x - event.x,
-            event1.y - event.y,
+            Math.abs(event1.x - event.x),
+            Math.abs(event1.y - event.y),
           ) >= (dragBehavior as ThresholdDragBehavior).threshold
         ) {
           removeEventListener("mousemove", mouseMove);
