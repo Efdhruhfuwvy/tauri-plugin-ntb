@@ -114,6 +114,10 @@ export async function titleBarMouseDown(event: MouseEvent) {
   }
 }
 
+export function addTitleBar(titleBar: Element) {
+  (titleBar as HTMLElement).addEventListener("mousedown", titleBarMouseDown);
+}
+
 const styleSheet = new CSSStyleSheet();
 document.adoptedStyleSheets.push(styleSheet);
 
@@ -132,8 +136,9 @@ async function updateCSS() {
     if (rule instanceof CSSStyleRule) {
       rule.selectorText = `.title-bar :is(${
         rule.selectorText
-          .replace(/windowcontrols/g, ".window-controls")
-          .replace(/image/g, "svg")
+          .replace(/\bheaderbar\b/g, ".title-bar")
+          .replace(/\bwindowcontrols\b/g, ".window-controls")
+          .replace(/\bimage\b/g, "svg")
       })`;
     }
   }
